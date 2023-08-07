@@ -9,9 +9,9 @@ import (
 
 const (
 	filePath    = "/mnt/mmap_example.txt"
-	fileSize    = 1024 * 1024     // 1 MB
-	concurrency = 200             // Number of concurrent fdatasync operations
-	duration    = 5 * time.Minute // Duration to run the writes
+	fileSize    = 1024 * 1024 * 1024 // 1 MB
+	concurrency = 100                // Number of concurrent fdatasync operations
+	duration    = 5 * time.Minute    // Duration to run the writes
 )
 
 func main() {
